@@ -1,0 +1,20 @@
+<header>
+  <div class="header">
+    <div class="navbar navbar-default">
+      <div>
+        <ul class="adminMenu pull-left">
+          <li>&nbsp;&nbsp;</li>
+          <% for(var x in menuItems) { %>
+            <li <% if(menuItems[x].id == activeTabId) { %> class="active" <% } %>>
+              <a href="<%= menuItems[x].href %>"><%= menuItems[x].label %></a>
+            </li>
+          <% } %>
+        </ul>
+        <ul class="adminMenu pull-right">
+          <li><a href="/app/logout">LOGOUT</a></li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</header>

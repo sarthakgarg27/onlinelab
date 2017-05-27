@@ -1,0 +1,21 @@
+<header>
+    <div class="header">
+        <div class="container">
+            <a href="/">
+                <img id="logo-header" src="/static/images/logo.png" alt="OLX Logo" style="margin-top: 5px;">
+            </a>
+            <div class="pull-right" style="margin-top: 30px;">
+                <%if (currentUser) { %>
+                <a class="btn-u" href="/app/logout">LOGOUT</a>
+                <% } else {%>
+                <a class="btn-u" href="/app/signup">Sign Up</a>
+                <a class="btn-u" href="/app/login" style="margin-left: 20px;">Login</a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="mainLoadingContainer" class="loadingContainer hide">
+
+</div>

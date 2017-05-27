@@ -1,0 +1,16 @@
+/node_modules
+.project
+.buildpath
+.settings/*
+tmp/*
+node_modules/*
+.editorconfig
+*.swp
+.DS_Store
+.idea/*
+Thumbs.db
+nbproject/*
+config.js
+logs/*
+dump.rdb
+static/static/documents/*

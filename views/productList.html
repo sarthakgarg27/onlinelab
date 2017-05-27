@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include commonHeadElements.html %>
+    </head>
+    <body>
+        <div id="siteLoadingContainer">
+            <% include header.html %>
+            <div id="dashboardViewStack">
+                <div id="home-view">
+                    <div class="breadcrumbs">
+                        <div class="container">
+                            <h1 class="text-center"><%= categoryDetails.name %></h1>
+                        </div>
+                    </div>
+
+                    <div class="container margin-top-20">
+                        <% for(var i in productList) { %>
+                        <div class="product-list-tile">
+                            <div class="pull-left">
+                                <div class="image-container">
+                                    <img src="<%= productList[i].image_url %>">
+                                </div>
+                                <div class="product-details">
+                                    <h2 class="product-title">
+                                        <%= productList[i].name %>
+                                    </h2>
+                                    <p class="product-description">
+                                        <%= productList[i].description %>
+                                    </p>
+                                    <span>Posted on: <%= utils.formatDate(productList[i].creation_timestamp) %></span>
+                                </div>
+                            </div>
+                            <div class="pull-right text-right">
+                                <p class="price-container">
+                                    Rs. <%= productList[i].price %>
+                                </p>
+                                <p class="user-details">
+                                    E-mail: <%= productList[i].email %>
+                                    <br><br>
+                                    Mobile: <%= productList[i].phone %>
+                                </p>
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <% } %>
+                    </div>
+
+                </div>
+            </div>
+            <% include footer.html %>
+            <% include commonFooterScriptElements.html %>
+            <% include socialPlatformScripts.html %>
+        </div>
+    </body>
+</html>

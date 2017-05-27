@@ -1,0 +1,264 @@
+@global-background-color: #1A485B;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.icon-shopping-cart {
+    font-size: 15px;
+}
+
+.container {
+   /* max-width: 100%;*/
+}
+
+textarea {
+    resize: none;
+}
+
+.componentHeader {
+    margin-bottom: 12px !important;
+}
+
+a.color-blue {
+    cursor: hand;
+    cursor: pointer;
+}
+
+p.errorMessage {
+    color: #ff0000;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.red-border {
+    border: 1px solid #ff0000;
+}
+
+ul.icons-ul {
+    margin-left: 0;
+    padding-left:0;
+
+    li {
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+.width-5 {
+    width: 5%;
+}
+
+.width-10 {
+    width: 10%;
+}
+
+.width-15 {
+    width: 15%;
+}
+
+.vertical-middle {
+    vertical-align: middle !important;
+}
+
+table.vertical-middle {
+    td {
+        vertical-align: middle !important;
+    }
+}
+
+.disable-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hand-icon {
+    cursor:hand;
+    cursor: pointer;
+}
+
+.adminMenu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    background: @global-background-color;
+
+    li {
+        display: inline-block;
+        a {
+            display: inline-block;
+            padding: 10px 25px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+    }
+
+    li.active {
+        background: #fff;
+        a {
+            color: @global-background-color;
+        }
+
+    }
+}
+
+.table-colored-header {
+    thead {
+        background-color: @global-background-color;
+        color: #FFFFFF;
+    }
+    th {
+        vertical-align: middle;
+    }
+    td {
+        vertical-align: middle !important;
+    }
+
+    tr.selected {
+        td {
+            background: #f9f9f9;
+        }
+    }
+}
+
+.page-header {
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+    h1 {
+        color: @global-background-color;
+    }
+}
+
+.topBarButtons {
+    position:relative;
+    top: -3px;
+    a {
+        margin-left: 8px;
+        font-weight: bold;
+        padding-left: 8px !important;
+
+        span {
+            margin-left: 8px;
+        }
+    }
+}
+
+.modal-form {
+    .form-row {
+        margin-top: 15px;
+    }
+}
+
+.selectBox {
+    padding: 5px;
+    border: 1px solid #DDD;
+    width: 100%;
+}
+
+.addEditLink {
+    color: @global-background-color;
+}
+
+.btn-u {
+    background: #fff;
+    border: 2px solid @global-background-color;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: @global-background-color;
+}
+
+.theme-background-color {
+    background: @global-background-color !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+.theme-text-color {
+    color: @global-background-color
+}
+
+.headline h2,
+.headline h3,
+.headline h4 {
+    border-bottom:2px solid @global-background-color;
+}
+
+.modal-title {
+    text-align: center;
+    color: @global-background-color;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.modal-footer {
+    .btn-u {
+        padding: 6px 40px;
+    }
+
+    .btn-u:first-child {
+        margin-right: 10%;
+    }
+}
+
+.btn-u:hover {
+    background: @global-background-color;
+}
+
+tr.text-center {
+    th,td {
+        text-align: center;
+    }
+}
+
+.input-group-addon {
+    background-color: transparent;
+}
+
+.error {
+    border-color: #ff0000;
+}
+
+.product-list-tile {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    .image-container {
+        width: 144px;
+        height: 108px;
+        float: left;
+        img {
+            width: 100%;
+        }
+    }
+
+    .product-details {
+        display: inline-block;
+        h2 {
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .product-description {
+            width: 500px;
+        }
+    }
+
+    .price-container {
+        font-size: 20px;
+    }
+
+    .user-details {
+        font-size: 15px;
+    }
+}

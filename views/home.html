@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include commonHeadElements.html %>
+    </head>
+    <body>
+        <div id="siteLoadingContainer">
+            <% include header.html %>
+            <div id="dashboardViewStack">
+                <div id="home-view">
+                    <div class="breadcrumbs">
+                        <div class="container">
+                            <h1 class="text-center">Online Selling Portal</h1>
+                        </div>
+                    </div>
+
+                    <div class="container content-sm">
+                        <div class="headline" style="margin-top: 30px;"><h2>Select a category</h2></div>
+                        <div class="row margin-bottom-20">
+                            <% for(var i in categoryList) { %>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="thumbnails thumbnail-style">
+                                    <div class="caption text-center">
+                                        <h4 class="margin-bottom-20"><%= categoryList[i].name %></h4>
+                                        <div style="width: 250px; height: 220px;">
+                                            <img src="/static/images/categories/<%= categoryList[i].thumbnail %>" style="width: 100%">
+                                        </div>
+                                        <a class="btn-u" href="/app/<%= categoryList[i].slug %>/ads/<%= categoryList[i].id %>">VIEW ADS</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <% include footer.html %>
+            <% include commonFooterScriptElements.html %>
+            <% include socialPlatformScripts.html %>
+        </div>
+    </body>
+</html>

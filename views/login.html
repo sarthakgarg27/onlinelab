@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include commonHeadElements.html %>
+</head>
+<body>
+<div>
+
+    <div id="dashboardViewStack">
+        <div id="login-view">
+            <div class="container padding-bottom-20">
+                <div class="row margin-top-20">
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                        <form class="reg-page login-block" method="post" action="/app/login" id="loginForm">
+                            <div class="reg-header">
+                                <h2 class="theme-text-color"><strong>LOGIN</strong></h2>
+                            </div>
+
+                            <% if(errorMessage) { %>
+                            <p class="errorMessage margin-bottom-10 text-center" id="loginError">
+                                <%= errorMessage %>
+                            </p>
+                            <% } %>
+
+                            <div class="input-group margin-bottom-10 margin-top-20">
+                                <span class="input-group-addon theme-text-color"><i class="icon-user"></i></span>
+                                <input type="text" placeholder="Username" class="form-control" name="email" data-validate="email">
+                            </div>
+
+                            <div class="input-group margin-bottom-10 margin-top-20">
+                                <span class="input-group-addon theme-text-color"><i class="icon-lock"></i></span>
+                                <input type="password" placeholder="Password" class="form-control" name="password" data-validate="password">
+                            </div>
+
+                            <div class="row" id="submitRow" style="margin-top: 35px;">
+                                <div class="text-center">
+                                    <button class="btn-u" type="submit" id="submitBtn" style="padding: 6px 65px">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!--/row-->
+                <div id="loading" class="component-loading hide"></div>
+            </div>
+        </div>
+    </div>
+    <% include commonFooterScriptElements.html %>
+
+    <script>
+        $("#loginForm").validate();
+    </script>
+
+</div>
+</body>
+</html>
